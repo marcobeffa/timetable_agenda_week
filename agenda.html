@@ -1,0 +1,234 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  
+
+  
+
+<script type="module">
+  import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
+  window.Stimulus = Application.start()
+
+  Stimulus.register("hello", class extends Controller {
+    static targets = [ "name" ]
+
+    connect() {
+    }
+  })
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Svelte --->
+</head>
+<body>
+  <div data-controller="hello">
+    <input data-hello-target="name" type="text">
+    <button data-action="click->hello#greet">Greet</button>
+  </div>
+  
+  
+
+    <section class="px-2 py-2 bg-white md:px-0">
+      <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+        <div class="flex flex-wrap items-center sm:-mx-3">
+          <div class="w-full md:px-3">
+            <div class="">
+              <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+                <span class="block xl:inline">Agenda</span>
+                <span class="block text-indigo-600 xl:inline" data-primary="indigo-600">Your week <h1 x-data="{ message: 'Lun 3 aprile 2023' }" x-text="message"></h1>
+</span>
+              </h1>
+              
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+<section class="bg-white  w-full overflow-x-auto h-full">
+    <!-- 24 h -- (5 - 23) = 19 h  -->
+
+
+    <div class="grid grid-cols-7 gap-2 m-4 h-full" style="width:1400px; height: :1400px;">
+
+        <div class="h-full" >
+            <div class="text-center my-2" style="height:20px;">Lunedì</div>
+            <div class="bg-gray-200 rounded-md my-2 p-2 h-full" style="height: 100px;"></div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              15:00 - 19:00 
+              <br>Fisioterapia
+              Percorsi Individuali
+            </div>
+          
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              19:30 - 20:00 
+              <br>
+             Christian Aperitivo
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              20:30 - 21:30 
+              <br>
+              Coro Canti popolari
+            </div>
+
+        </div>
+        <div class="h-full" >
+          <div class="text-center my-2" style="height:20px;">Martedì</div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              09:00 - 10:00 
+              <br>
+              Montichiari
+              <br> Fisioterapia in gruppo Postura
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              10:30 - 12:30 
+              <br>
+              Fisioterapia Individuale
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              15:00 - 15:45 
+              <br>
+              Viadana
+              <br> Fisioterapia in gruppo Postura
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              16:00 - 16:45 
+              <br>
+              Lezione Fisarmonica
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              17:00 - 19:00 
+              <br>
+             Fisioterapia Individuale
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              19:30 - 22:00 
+              <br>
+              Devs4Business Il covo dei devs
+            </div>
+
+        </div>
+        <div class="h-full" >
+          <div class="text-center my-2" style="height:20px;">Mercoledì</div>
+          <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+            14:00 - 18:00 
+            <br>
+            Programmazione
+            
+          </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              18:00 - 19:00 
+              <br>
+              Montichiari
+              <br> Fisioterapia in gruppo Postura
+            </div>
+
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              20:30 - 21:30 
+              <br>
+              Tai Chi
+            </div>
+
+        </div>
+        <div class="h-full" >
+          <div class="text-center my-2" style="height:20px;">Giovedì</div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              09:00 - 10:00 
+              <br>
+              Montichiari
+              <br> Fisioterapia in gruppo Postura
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              16:00 - 17:00 
+              <br>Viadana
+              <br>
+              Gruppo fisioterapia postura
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              17:00 - 20:00 
+              <br>
+              Fisioterapia Individuale
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              20:00 - 21:00 
+              <br>
+              Coro Fisarmonica
+            </div>
+
+        </div>
+        <div class="h-full" >
+          <div class="text-center my-2" style="height:20px;">Venerdì</div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              09:00 - 11:00 
+              <br>
+              Viadana
+              <br>Contenuti Youtube
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              15:00 - 16:00 
+              <br>Viadana
+              <br>
+              Gruppo fisioterapia postura
+            </div>
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              18:00 - 19:00 
+              <br>
+              Montichiari
+              <br> Fisioterapia in gruppo Postura
+            </div>
+
+            <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+              20:30 - 21:30 
+              <br>
+              Tai Chi
+            </div>
+            
+
+        </div>
+        <div class="h-full" >
+          <div class="text-center my-2" style="height:20px;">Sabato</div>
+          <div class="bg-gray-200 rounded-md  my-2 p-2 h-full" style="height: 100px;"> 
+            15:00 - 17:30 
+            <br>
+            Fisioterapia Individuale
+          </div>
+            
+
+        </div>
+        <div class="h-full" >
+          <div class="text-center my-2" style="height:20px;">Domenica</div>
+           
+
+        </div>
+    </div>
+    </div>
+</section>
+
+   
+</body>
+</html>
+
+
